@@ -197,20 +197,44 @@ npm install
 
 ## Running the Application
 
+> **Important:** `node_modules` is not included in the repository. You must run `npm install` inside both `backend/` and `frontend/` before starting the app (steps 3 and 5 above). Skipping this step will cause a "module not found" error.
+
 Open **two terminals**.
 
 **Terminal 1 — Backend:**
+
+Mac/Linux:
 ```bash
-cd /Users/Sandy/ResourceManager/backend
+cd ResourceManager/backend
+npm install
 npm start
 ```
+
+Windows:
+```cmd
+cd ResourceManager\backend
+npm install
+npm start
+```
+
 The API will be available at `http://localhost:3001`
 
 **Terminal 2 — Frontend:**
+
+Mac/Linux:
 ```bash
-cd /Users/Sandy/ResourceManager/frontend
+cd ResourceManager/frontend
+npm install
 npm run dev
 ```
+
+Windows:
+```cmd
+cd ResourceManager\frontend
+npm install
+npm run dev
+```
+
 The app will be available at `http://localhost:5173`
 
 Open your browser at **http://localhost:5173**
