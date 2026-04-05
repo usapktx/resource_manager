@@ -171,6 +171,7 @@ function seedData() {
   const userCount = db.prepare('SELECT COUNT(*) as count FROM users').get();
   if (!userCount || userCount.count === 0) {
     const users = [
+      { username: 'admin', password: 'admin123', full_name: 'Administrator', email: 'admin@company.com', role: 'team_lead' },
       { username: 'sarah.lead', password: 'lead123', full_name: 'Sarah Connor', email: 'sarah@company.com', role: 'team_lead' },
       { username: 'john.manager', password: 'mgr123', full_name: 'John Smith', email: 'john@company.com', role: 'manager' },
       { username: 'alex.viewer', password: 'view123', full_name: 'Alex Taylor', email: 'alex@company.com', role: 'viewer' },
